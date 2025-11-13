@@ -9,6 +9,7 @@ __pycache__/
 # Venv stuff
 bin/
 include/
+pyvenv.cfg
 
 # Distribution / packaging
 .Python
