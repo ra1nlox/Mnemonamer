@@ -20,9 +20,9 @@ Then you can just run the build script and it will generate a one-file exacutabl
 Alternatively, you can run the commands yourself!
 
 ```bash
-> pip install -r requirements.txt
-
 > source ./bin/activate
+
+> pip install -r requirements.txt
 
 > pyinstaller --clean -F -y -n "mnemonamer" --collect-data wonderwords main.py
 ```
