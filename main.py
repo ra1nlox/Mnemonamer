@@ -7,12 +7,10 @@ import re
 def generate_new_file_name(size):
     generator = RandomWord()
     new_file_name = ""
-    for i in range(size):
+    for i in range(size - 1):
         word = generator.word(include_categories=["adjective", "noun", "verb"])
-        if i == size - 1:
-            new_file_name += f"{word}"
-        else:
-            new_file_name += f"{word}-"
+        new_file_name += f"{word}-"
+    new_file_name += f"{word}"
 
     return new_file_name
 
